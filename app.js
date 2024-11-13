@@ -8,7 +8,8 @@ const User = require("./model/User");
 const Book = require("./model/Book");
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/library')
+// mongoose.connect('mongodb://localhost:27017/library')
+mongoose.connect('mongodb+srv://lcky:YykC3TJZhY@cluster0.skjwh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
